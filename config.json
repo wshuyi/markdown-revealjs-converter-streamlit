@@ -1,0 +1,9 @@
+{
+  "revealjs_export_dir": "revealjs_export",
+  "temp_dir":"temp",
+  "markdown_export_dir":"markdown_temp_export",
+  "author_name_english": "Shuyi Wang",
+  "author_name_chinese": "王树义",
+  "revealjs_theme": "simple",
+  "revealjs_transition": "convex"
+}
