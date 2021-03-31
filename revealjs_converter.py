@@ -93,6 +93,8 @@ class MarkdownRevealjsConverter(MarkdownConverter):
                 39: 'next',
                 37: 'prev'
             },
+
+        controls: false,
         """
 
         # make linear
