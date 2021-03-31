@@ -1,1 +1,1 @@
-pandoc
+pandoc==2.13
