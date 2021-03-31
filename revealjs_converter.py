@@ -97,7 +97,8 @@ class MarkdownRevealjsConverter(MarkdownConverter):
         controls: false,
         """
 
-        # make linear
+        # make linear for the new pandoc version
+        # note you need to copy new version of revealjs for this
         # linear_control = "\n\nnavigationMode: 'linear', \n"
 
         regex = r"(Reveal\.initialize\({)"
