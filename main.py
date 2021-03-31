@@ -40,10 +40,13 @@ config["path"] = "config.json"
 config["author"] = st.text_input("Author Name:", "王树义")
 
 in_text = st.text_area("Your Indented Markdown goes here: ", "")
-with open(md_fname, 'w') as f:
-    f.write(in_text)
+
 
 if st.button("convert!"):
+
+    with open(md_fname, 'w') as f:
+        f.write(in_text)
+
     roam_converter = RoamMDConverter(md_fname, **config)
     roam_converter.convert(roam_doc_mode="slide")
     myconverter = MarkdownRevealjsConverter(roam_converter.output_md, **config) 
