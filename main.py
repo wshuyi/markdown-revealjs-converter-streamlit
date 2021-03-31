@@ -68,5 +68,6 @@ if st.button("convert!"):
     shutil.rmtree(revealjs_export_dir)
     shutil.rmtree(markdown_export_dir)
     os.remove(out_zip)
+    os.remove(md_fname)
 
     st.markdown(href, unsafe_allow_html=True)
