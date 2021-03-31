@@ -86,6 +86,15 @@ class MarkdownRevealjsConverter(MarkdownConverter):
     def html_adjust(self):
         data = self.html_content
 
+        # make linear the legacy way for old pandoc
+
+        keyboard_string = """
+                keyboard: {
+                39: 'next',
+                37: 'prev'
+            },
+        """
+
         # make linear
         linear_control = "\n\nnavigationMode: 'linear', \n"
 

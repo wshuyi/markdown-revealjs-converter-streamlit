@@ -9,4 +9,5 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
-dist/*.map
+css/reveal.min.css
+js/reveal.min.js
