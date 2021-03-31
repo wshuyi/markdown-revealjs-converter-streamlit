@@ -88,7 +88,7 @@ class MarkdownRevealjsConverter(MarkdownConverter):
 
         # make linear the legacy way for old pandoc
 
-        keyboard_string = """
+        linear_control = """
                 keyboard: {
                 39: 'next',
                 37: 'prev'
@@ -96,7 +96,7 @@ class MarkdownRevealjsConverter(MarkdownConverter):
         """
 
         # make linear
-        linear_control = "\n\nnavigationMode: 'linear', \n"
+        # linear_control = "\n\nnavigationMode: 'linear', \n"
 
         regex = r"(Reveal\.initialize\({)"
         subst = "\\1" + linear_control
